@@ -1,0 +1,96 @@
+@import url("/home/via/.cache/wal/colors-waybar.css");
+
+/* ================================ */
+/*            Common CSS            */
+/* ================================ */
+* {
+  /* `otf-font-awesome` is required to be installed for icons */
+  padding: 0;
+  margin: 0;
+  min-height: 0;
+  border-radius: 0;
+  background: none;
+  border: none;
+  text-shadow: none;
+  transition: none;
+  box-shadow: none;
+  font-weight: 800;
+  font-size: 15px;
+}
+
+/* the whole window */
+window#waybar {
+  border: 0px solid @color1;
+  border-top: 0px #000;
+  color: @color3;
+  background: @background;
+  border-radius: 0px 0px 12px 12px;
+}
+
+window#waybar.hidden {
+  opacity: 1;
+}
+
+#workspaces button {
+  padding: 0px 4px;
+  margin: 2px 2px;
+  margin-top: 2px;
+  border-radius: 6px;
+  color: @color3;
+  background-color: @background;
+  transition: all 0.3s ease-in-out;
+}
+
+#workspaces button.active {
+  color: @color15;
+  background: transparent;
+  margin-top: 0px;
+}
+
+#clock,
+#custom-appmenu {
+  background-color: transparent;
+  font-weight: 800;
+  color: @color3;
+  border-radius: 8px;
+  padding: 0px 8px;
+  margin: 2px;
+}
+
+#taskbar {
+  margin: 2px 10px;
+  padding: 4px 8px;
+  border-radius: 8px;
+  font-weight: normal;
+}
+
+#custom-logo {
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+#backlight,
+#pulseaudio,
+#network,
+#bluetooth,
+#battery,
+#cpu,
+#memory {
+  background-color: transparent;
+  /*font-size: 14px;*/
+  font-weight: 800;
+  color: @color3;
+  border-radius: 8px;
+  padding: 4px 2px;
+  margin: 0px;
+}
+
+#pulseaudio {
+  margin-right: 7px;
+}
+
+#battery.critical:not(.charging) {
+  background-color: #f53c3c;
+  color: #ebdbb2;
+  animation: blink 0.5s linear infinite alternate;
+}

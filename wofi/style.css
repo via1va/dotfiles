@@ -1,0 +1,40 @@
+@import url("/home/via/.cache/wal/colors-waybar.css");
+
+#window {
+  margin: 0px;
+  background-color: alpha(@color0, 0.8);
+  color: @foreground;
+}
+
+#input {
+  margin: 15px;
+  background-color: transparent;
+  color: @color15;
+  border-radius: 5px;
+  border: 2px solid @color1;
+}
+
+#scroll {
+  margin-bottom: 15px;
+}
+
+#entry {
+  margin: 0px 15px;
+}
+
+#entry:selected {
+  /*background-color: /*rgb(245, 98, 36);*/
+  background-color: transparent;
+  border: 2px solid @color1;
+  border-radius: 5px;
+  outline: none;
+}
+
+#entry>box {
+  margin-left: 16px;
+}
+
+
+#entry image {
+  padding-right: 10px;
+}
